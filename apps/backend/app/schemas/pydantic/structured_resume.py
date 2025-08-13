@@ -19,7 +19,7 @@ class PersonalData(BaseModel):
 
 class Experience(BaseModel):
     job_title: str = Field(..., alias="jobTitle")
-    company: str
+    company: Optional[str] = None
     location: Optional[str] = None
     start_date: str = Field(..., alias="startDate")
     end_date: str = Field(..., alias="endDate")

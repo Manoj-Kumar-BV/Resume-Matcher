@@ -12,7 +12,7 @@ SCHEMA = {
     "Experiences": [
         {
             "jobTitle": "string",
-            "company": "string",
+            "company": "string | null",
             "location": "string | null",
             "startDate": "YYYY-MM-DD",
             "endDate": "YYYY-MM-DD or Present",
