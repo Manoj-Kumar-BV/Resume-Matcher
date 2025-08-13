@@ -13,7 +13,7 @@ SCHEMA = {
         {
             "jobTitle": "string",
             "company": "string",
-            "location": "string",
+            "location": "string | null",
             "startDate": "YYYY-MM-DD",
             "endDate": "YYYY-MM-DD or Present",
             "description": ["string", "..."],
@@ -48,8 +48,8 @@ SCHEMA = {
             "fieldOfStudy": "string | null",
             "startDate": "YYYY-MM-DD",
             "endDate": "YYYY-MM-DD",
-            "grade": "string",
-            "description": "string",
+            "grade": "string | null",
+            "description": "string | null",
         }
     ],
     "Extracted Keywords": ["string", "..."],
